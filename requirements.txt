@@ -1,0 +1,30 @@
+# --- Core Framework ---
+streamlit
+pandas
+numpy
+torch
+cn-clip
+Pillow
+requests
+pyyaml
+faiss-cpu
+openai
+pymilvus
+tqdm
+openpyxl
+huggingface-hub
+# --- Vector Stores ---
+pymilvus
+faiss-cpu # or faiss-gpu if you have a compatible GPU
+numpy==1.23.5
+# --- Encoders ---
+# For HuggingFace CLIP
+transformers
+torch
+Pillow # PIL, often a dependency of torch/transformers, but good to be explicit
+requests
+sentencepiece
+# --- LLM Generators ---
+openai
+# --- Image Processing ---
+opencv-python-headless # For image processing in reranker and other places

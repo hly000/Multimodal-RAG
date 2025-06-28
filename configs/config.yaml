@@ -1,0 +1,14 @@
+encoder:
+  type: hf_clip
+  hf_clip:
+    model_name: 'ViT-B-16'
+vector_store:
+  type: faiss
+  faiss:
+    index_path: "faiss_data/faiss_index.bin"
+    metadata_path: "faiss_data/faiss_metadata.json"
+    dimension: 512
+llm:
+  type: openai
+  openai:
+    model: 'gpt-4o' 
